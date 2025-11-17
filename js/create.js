@@ -44,7 +44,7 @@ function validate(user){
         errName.innerText = "Name is required";
         errName.style.color = "red";
         isvalid=false;
-    } else if(!/^[a-zA-z]{2,20}$/.test(user?.name)){
+    } else if(!/^[a-zA-z ]{2,20}$/.test(user?.name)){
         errName.innerText = "invalid name format";
         errName.style.color = "red";
         isvalid=false;

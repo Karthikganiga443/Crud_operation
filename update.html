@@ -22,6 +22,34 @@
         <div class="title">
             <h1>Update User</h1>
         </div>
+
+        <section class="row">
+            <div class="card">
+            <div class="card-body">
+                <form action="post" autocomplete="off" id="useform">
+                    <div class="form-item">
+                        <label for="name">Your name</label>
+                        <input type="text" name="name" id="name" class="form-control" >
+                        <strong id="nameErr"></strong>
+                    </div>
+                    <div class="form-item">
+                        <label for="email">Your Email</label>
+                        <input type="text" name="email" id="email" class="form-control" >
+                        <strong id="emailErr"></strong>
+                    </div>
+                    <div class="form-item">
+                        <label for="mobile">Your Mobile</label>
+                        <input type="text" name="mobile" id="mobile" class="form-control" >
+                        <strong id="mobileErr"></strong>
+                    </div>
+
+                    <div class="form-item">
+                        <button class="btn success">Update User</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </section>
     </section>
 
 
