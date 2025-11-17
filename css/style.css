@@ -50,7 +50,7 @@ body{
     font-weight:800;
 }
 .navbar .logo{
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .navbar .menu a{
@@ -63,8 +63,10 @@ body{
 }
 
 .navbar .menu a:hover{
-    background-color: orange;
+    background-color: rgb(255, 166, 0);
 }
+
+
 
 .title{
     text-align: center;
@@ -117,6 +119,7 @@ body{
     padding: 4px 6px;
     border: 5px;
     color: white;
+    border-radius: 5px;
 }
 .info{
     background-color: teal;
@@ -128,3 +131,31 @@ body{
 .success{
     background-color: green;
 }
+
+
+/* form inpus */
+
+.row{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row .card{
+    width: 50vw;
+}
+ .row .form-item{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-top: 1rem;
+ }
+
+ .form-item .form-control{
+    width: 100%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding:4px 6px;
+ }

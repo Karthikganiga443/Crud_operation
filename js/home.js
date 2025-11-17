@@ -22,6 +22,23 @@ async function readUsers(){
 
 readUsers();
 
+//delete user
+async function deleteuser(id) {
+    if(window.confirm("Are you sure to delete user?")){
+    await fetch(`${url}/api/user/delete/${id}`,{
+        method:"DELETE",
+        headers:{
+            "content-Type":"application/json"
+        }
+    }).then(out=> out.json())
+    .then(res=>{
+        alert(res?.msg);
+        window.location.reload();
+    }).catch(err=> console.error(err?.response?.msg))
+}
+
+}
+
 //to print the user data
 
 function printUsers(data){
@@ -40,8 +57,10 @@ function printUsers(data){
         </div>
         <div class="card-footer">
         <a href="update.html?userId=${item._id}" class="btn info">Edit</a>
-        <button class="btn danger">Delete</button>
+        <button onclick="deleteuser('${item._id}')" class="btn danger">Delete</button>
         </div>
         </div>` 
     });
 }
+
+
